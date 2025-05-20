@@ -1,15 +1,17 @@
-#include <stdio.h>
+ #include <iostream>
+using namespace std;
 
 int main()
 {
-    int n;
-    printf("Hello World");
-    scanf("%d",&n);
-   int  fact=1;
-    for(int i=1;i<=n;i++){
-        fact=fact*i;
+    int num;
+    int fact=1;
+    cout<<"Hello World";
+    cin>>num;
+    for(int i=1;i<=num;i++){
+        fact *=i;
     }
-        printf("factorial of this %d\n",fact);
+        cout<<"factorial of "<<num <<"is"<<fact<<endl;
+    
 
     return 0;
 }
